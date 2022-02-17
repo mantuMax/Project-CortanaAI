@@ -50,7 +50,7 @@ def greeting():
     time_in_hour = int(datetime.datetime.now().hour)
 
     # print(time_in_hour)
-    if (time_in_hour > 0 and time_in_hour < 12):
+    if time_in_hour > 0 and time_in_hour < 12:
         print(f"Hello {username}, Good Morning :)\n")
 
     elif time_in_hour > 12 and time_in_hour < 16:
@@ -60,7 +60,7 @@ def greeting():
         print(f"Hello {username}, Good Evening :)\n")
 
     # Ultimate statements
-    print("I'm here...")
+    print("I'm here... \n")
     speak("I'm here")
 
 
@@ -96,13 +96,12 @@ if __name__ == "__main__":
 
     # logic
     try:
-        while (True):
-            attempt = attempt + 1
+        while True:
             query = process_command().lower()
-            # base-commands;
+            attempt = attempt + 1
 
-            # attempt-limit
-            if attempt >= 6:
+            # base-commands;
+            if attempt >= 4:
                 print("Looking forward to helping out... \n")
                 speak("Looking forward to helping out...")
                 break
@@ -112,6 +111,7 @@ if __name__ == "__main__":
                 print(
                     f"Hello, I'm your {ai_name} & I'm here to help you... \n")
                 speak(f"Hello, I'm your {ai_name}, and I'm here to help you")
+                continue
 
             # feedback | work required!
             elif "you need to improve" in query:
@@ -124,31 +124,37 @@ if __name__ == "__main__":
                 current_date = str(os.system("date"))
                 print(f"The current date is; {current_date} \n")
                 speak(f"The current date is, {current_date}")
+                continue
 
             # time
             elif "the time" in query:
                 current_time = datetime.datetime.now().strftime(" %H:%M:%S ")
                 print(f"The time is; {current_time} \n")
                 speak(f"The time is; {current_time}")
+                continue
 
             # wishing
             elif "good morning" in query:
                 print(f"Good morning {username}, have a nice day :) \n")
                 speak(f"Good morning {username}, have a nice day")
+                continue
 
             elif "good afternoon" in query:
                 print(f"Good afternoon {username}, hope you doing good :) \n")
                 speak(f"Good afternoon {username}, hope you doing good")
+                continue
 
             elif "good evening" in query:
                 print(
                     f"Good evening {username}, It's time to get refreshed :) \n")
                 speak(
                     f"Good evening {username}, It's time to get refreshed")
+                continue
 
             elif "good night" in query:
                 print(f"Good Night {username}, Have a nice dream :) \n")
                 speak(f"Good Night {username}, Have a nice dream")
+                continue
 
             # exit
             elif "quit" in query:
@@ -175,6 +181,7 @@ if __name__ == "__main__":
 
     except KeyboardInterrupt:
         print("\n Operation cancelled by the user :( \n")
+
 
 
 """
