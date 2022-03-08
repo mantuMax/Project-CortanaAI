@@ -4,12 +4,12 @@
 from pyfiglet import figlet_format
 
 
-def Introduction():
+def introduction():
     out = figlet_format("Cortana  AI", "doom")
     return out
 
 
-print(Introduction())
+print(introduction())
 
 
 """

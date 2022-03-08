@@ -11,12 +11,11 @@ import pyttsx3
 import speech_recognition as source1
 import datetime
 import os
-from cortana_introduction import Introduction
-
+from cortana_introduction import introduction
 
 # username
 username = "Starboy"
-ai_name = "Stargirl"
+ai_name = "Cortana"
 
 
 # voice_engine
@@ -91,7 +90,7 @@ def process_command():
 # Ultimate-Function
 attempt = 0
 if __name__ == "__main__":
-    Introduction()
+    introduction()
     greeting()
 
     # logic
@@ -109,8 +108,8 @@ if __name__ == "__main__":
             # define yourself
             elif "who are you" in query:
                 print(
-                    f"Hello, I'm your {ai_name} & I'm here to help you... \n")
-                speak(f"Hello, I'm your {ai_name}, and I'm here to help you")
+                    f"Hello, I'm {ai_name} & I'm here to help you... \n")
+                speak(f"Hello, I'm {ai_name}, and I'm here to help you")
                 continue
 
             # feedback | work required!
