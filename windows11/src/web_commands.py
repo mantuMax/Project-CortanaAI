@@ -13,7 +13,7 @@ import pyttsx3
 import speech_recognition as source1
 import datetime
 import os
-from web.cortana_introduction import introduction
+from cortana_introduction import introduction
 
 # username
 username = "Starboy"
