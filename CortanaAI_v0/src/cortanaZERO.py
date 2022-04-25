@@ -1,4 +1,4 @@
-# Cortana AI - v0.0
+# Project-CortanaAI, Level 0, Step-2
 
 """
 Developer: Starboy
@@ -179,17 +179,4 @@ if __name__ == "__main__":
                 continue
 
     except KeyboardInterrupt:
-        print("\n Operation cancelled by the user :( \n")
-
-
-
-"""
-# TO-DOs ;
-
-        >_ 
-
-        >_ 
-
-        >_ Feature testing in tests...
-
-"""
+        print("\n\n Operation cancelled by the user :( \n")
