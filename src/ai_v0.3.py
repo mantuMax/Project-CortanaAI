@@ -32,7 +32,8 @@ def introduction():
 # voice_engine
 voice_engine = pyttsx3.init("sapi5")
 voice_engine_voice = voice_engine.getProperty("voices")
-voice_engine.setProperty("voice", voice_engine_voice[1].id)  # Choose between voices: print(voice_engine_voice[2].id)
+# Choose between voices: print(voice_engine_voice[2].id)
+voice_engine.setProperty("voice", voice_engine_voice[1].id)
 voice_engine_rate = voice_engine.getProperty("rate")
 voice_engine.setProperty("rate", 200)
 
@@ -137,7 +138,8 @@ if __name__ == "__main__":
                 continue
 
             elif "good afternoon" in user_request:
-                print(f"Good afternoon {formal_name}, hope you doing good :) \n")
+                print(
+                    f"Good afternoon {formal_name}, hope you doing good :) \n")
                 speak(f"Good afternoon {formal_name}, hope you doing good")
                 continue
 
