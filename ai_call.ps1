@@ -1,10 +1,10 @@
 # CortanaAI startup script for windows systems...
 
-.\env\Scripts\activate
+.Scripts\activate
 
 Clear-Host
 
-cd .\src\
+Set-Location .\src\
 
 python .\main.py
 
